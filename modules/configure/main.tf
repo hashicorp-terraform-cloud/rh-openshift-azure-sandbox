@@ -23,3 +23,13 @@ resource "local_file" "osServicePrincipal" {
   })
   filename = "${path.module}/../../generated/osServicePrincipal.json"
 }
+
+resource "local_file" "acme-service-principal" {
+  content = templatefile("${path.module}/templates/acme.source.tpl", {
+    var_acme_subscription_id = var.arm_subscription_id,
+    var_acme_tenant_id       = var.arm_tenant_id,
+    var_acme_client_id       = var.acme_client_id,
+    var_acme_client_secret   = var.acme_client_secret,
+  })
+  filename = "${path.module}/../../generated/acme.source"
+}

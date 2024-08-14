@@ -47,6 +47,8 @@ module "configuration" {
   arm_client_secret   = module.service-principals.arm_client_secret
   arm_subscription_id = module.service-principals.arm_subscription_id
   arm_tenant_id       = module.service-principals.arm_tenant_id
+  acme_client_id      = module.service-principals.acme_client_id
+  acme_client_secret  = module.service-principals.acme_client_secret
   public_key_path     = var.public_key_path
   pull_secret         = var.pull_secret
   depends_on          = [module.dns, module.service-principals]

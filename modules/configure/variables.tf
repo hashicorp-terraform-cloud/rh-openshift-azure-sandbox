@@ -1,10 +1,20 @@
 variable "arm_client_id" {
-  description = "The Azure Service Principal client ID"
+  description = "The Azure Service Principal client ID for Red Hat OpenShift Container Platform"
   type        = string
 }
 
 variable "arm_client_secret" {
-  description = "The Azure Service Principal client secret"
+  description = "The Azure Service Principal client secret for Red Hat OpenShift Container Platform"
+  type        = string
+}
+
+variable "acme_client_id" {
+  description = "The Azure Service Principal client ID for the ACME process"
+  type        = string
+}
+
+variable "acme_client_secret" {
+  description = "The Azure Service Principal client secret for the ACME process"
   type        = string
 }
 
