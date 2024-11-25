@@ -1,3 +1,8 @@
+variable "subscription_id" {
+  description = "The subscription ID to target for the terraform run"
+  type        = string
+}
+
 variable "resource_group" {
   description = "The name of the resource group to create to hold the prereqs"
   type        = string

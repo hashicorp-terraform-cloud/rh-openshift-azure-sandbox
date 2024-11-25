@@ -17,6 +17,8 @@ terraform {
 
 provider "azurerm" {
   features {}
+  resource_provider_registrations = "core"
+  subscription_id                 = var.subscription_id
 }
 
 provider "azuread" {}
