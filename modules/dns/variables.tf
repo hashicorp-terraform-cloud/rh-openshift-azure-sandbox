@@ -6,7 +6,6 @@ variable "resource_group" {
 variable "region" {
   description = "The Azure region to deploy resources"
   type        = string
-  default     = "uksouth"
 }
 
 variable "base_domain" {

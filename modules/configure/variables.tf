@@ -33,8 +33,8 @@ variable "base_domain" {
   type        = string
 }
 
-variable "pull_secret" {
-  description = "The pull secret for the cluster"
+variable "pull_secret_path" {
+  description = "The path to the pull secret for the self-managed cluster"
   type        = string
 }
 
