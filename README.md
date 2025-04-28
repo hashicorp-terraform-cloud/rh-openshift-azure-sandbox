@@ -1,6 +1,20 @@
 # rh-openshift-azure-sandbox
 
-Set up the prerequisites to allow Red Hat OpenShift Container Platform to be deployed into a Doormat-vended Azure account.
+This module allows for the deployment of Red Hat OpenShift into Azure either as a `self_managed` (IPI/UPI) deployment, or as a `hosted`(Azure Red Hat OpenShift) deployment.
+
+## Common
+This module creates:
+
+ * Base Azure resources (resource groups)
+ * DNS Zone(s)
+ * SPNs for both OpenShift and ACME configuration
+
+
+## Self Managed
+This module creates the conifguration files required to deploy Red Hat OpenShift Container Platform into the Azure subscription
+
+## Hosted
+This module deployes Azure Red Hat OpenShift into the Azure subscription, and configures it with LetsEncrypt certificates.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
